@@ -1,0 +1,22 @@
+.row{
+    padding: 20px;
+}
+div{
+    background-color: #885f99;
+    text-align: center;
+}
+#nombre{
+    font-weight: bold;
+    
+}
+@media (min-width: 576px){
+    #foto{
+        position: absolute;
+        width: 30%;
+        border-radius: 70%;
+        box-shadow: 3px 3px 3px grey;
+        left: 6%;
+        top: 11%;
+     
+    }
+}

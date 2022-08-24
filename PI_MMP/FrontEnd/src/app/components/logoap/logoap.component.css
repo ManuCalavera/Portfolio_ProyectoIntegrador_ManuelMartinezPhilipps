@@ -1,0 +1,36 @@
+.container{
+    background-color: #885f99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    margin-right: 0.5em;
+}
+
+#logoap{
+    background-color: #885f99;
+    width: 180px;
+}
+img{
+    background-color: #885f99;
+    width: 60px;
+}
+.btn{
+    border-width: medium;
+}
+
+@media (max-width: 575px){
+.container{
+    flex-direction: column;
+
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes img{
+    margin: 0.2em
+}
+}

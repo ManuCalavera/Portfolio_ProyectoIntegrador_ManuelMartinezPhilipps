@@ -1,8 +1,7 @@
-package com.portfolio.mmp.Interface;
+package com.portfoliommp.mgb.Interface;
 
-import com.portfolio.mmp.entity.Persona;
+import com.portfoliommp.mgb.Entity.Persona;
 import java.util.List;
-
 
 public interface IPersonaService {
     public List<Persona> getPersona();
@@ -12,5 +11,4 @@ public interface IPersonaService {
     public void deletePersona(Long id);
     
     public Persona findPersona(Long id);
-    
-    }
+}

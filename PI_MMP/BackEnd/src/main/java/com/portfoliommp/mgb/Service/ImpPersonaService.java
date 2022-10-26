@@ -1,13 +1,12 @@
 
-package com.portfolio.mmp.Service;
+package com.portfoliommp.mgb.Service;
 
-import com.portfolio.mmp.Interface.IPersonaService;
-import com.portfolio.mmp.Repository.IPersonaRepository;
-import com.portfolio.mmp.entity.Persona;
+import com.portfoliommp.mgb.Entity.Persona;
+import com.portfoliommp.mgb.Interface.IPersonaService;
+import com.portfoliommp.mgb.Repository.IPersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 @Service
 public class ImpPersonaService implements IPersonaService{
@@ -17,11 +16,11 @@ public class ImpPersonaService implements IPersonaService{
     public List<Persona> getPersona() {
         List<Persona> persona = ipersonaRepository.findAll();
         return persona;
-                }
+    }
 
     @Override
     public void savePersona(Persona persona) {
-       ipersonaRepository.save(persona);
+        ipersonaRepository.save(persona);
     }
 
     @Override
@@ -31,8 +30,8 @@ public class ImpPersonaService implements IPersonaService{
 
     @Override
     public Persona findPersona(Long id) {
-        Persona persona = ipersonaRepository.findById(id).orElse(null);
-        return persona;
+       Persona persona = ipersonaRepository.findById(id).orElse(null);
+       return persona;
     }
     
 }

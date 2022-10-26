@@ -1,13 +1,13 @@
-package com.portfolio.mmp;
+package com.portfoliommp.mgb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MmpApplication {
+public class MgbApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MmpApplication.class, args);
+		SpringApplication.run(MgbApplication.class, args);
 	}
 
 }

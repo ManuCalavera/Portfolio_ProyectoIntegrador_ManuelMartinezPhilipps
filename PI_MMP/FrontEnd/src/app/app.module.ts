@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -14,6 +13,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HsyssComponent } from './components/hsyss/hsyss.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,12 +26,13 @@ import { FooterComponent } from './components/footer/footer.component';
     EducacionComponent,
     HsyssComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule,
     NgCircleProgressModule.forRoot({
     "backgroundGradient": true,
     "backgroundColor": "#ffffff",
@@ -49,8 +50,11 @@ import { FooterComponent } from './components/footer/footer.component';
     "titleColor": "#000000",
     "subtitleColor": "#000000",
     "imageHeight": 20,
-    "imageWidth": 20
-  })
+    "imageWidth": 20,
+  }),
+  
+  
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

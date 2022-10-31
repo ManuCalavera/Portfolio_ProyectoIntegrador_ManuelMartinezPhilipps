@@ -1,4 +1,4 @@
-package com.portfoliommp.mgb.Entity;
+package com.portfolio.mgb.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
